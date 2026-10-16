@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0c0e"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </linearGradient>
+
+    <linearGradient id="bar-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4800"/>
+      <stop offset="100%" stop-color="#ff7b39"/>
+    </linearGradient>
+
+    <linearGradient id="bar-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <linearGradient id="bar-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+
+    <filter id="subtle-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .card-title { font-family: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
+    .card-tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #ff4800; letter-spacing: 1.5px; text-transform: uppercase; }
+    .card-desc { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; fill: #a1a1aa; }
+    .skill-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600; fill: #f4f4f5; }
+    .skill-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #a1a1aa; }
+    .skill-pct { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; fill: #ff4800; }
+    .track { fill: #1c1c21; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="900" height="370" rx="16" fill="url(#card-grad)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Header Header -->
+  <g transform="translate(40, 36)">
+    <circle cx="0" cy="0" r="4" fill="#ff4800"/>
+    <text x="14" y="4" class="card-tag">ENGINEERING &amp; CREATIVE BENCHMARKS</text>
+    <text x="0" y="32" class="card-title">Production Competence &amp; Architecture Arsenal</text>
+    <text x="0" y="52" class="card-desc">Verified technical capacity across relational backends, modern reactive SPAs, and avant-garde visual design.</text>
+    <line x1="0" y1="68" x2="820" y2="68" stroke="#1f1f23" stroke-width="1"/>
+  </g>
+
+  <!-- Skill Rows -->
+  <g transform="translate(40, 130)">
+    <!-- Skill 1: Nuxt 3 & Vue 3 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" class="skill-name">Vue 3 &amp; Nuxt 3 Architecture</text>
+      <text x="210" y="0" class="skill-meta">• Composition API, i18n, Color-Mode, Pinia</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">93%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="762" height="7" rx="3.5" fill="url(#bar-orange)" filter="url(#subtle-glow)"/>
+    </g>
+
+    <!-- Skill 2: Next.js & React -->
+    <g transform="translate(0, 38)">
+      <text x="0" y="0" class="skill-name">Next.js 14 &amp; React (App Router)</text>
+      <text x="240" y="0" class="skill-meta">• Server Actions, SSR, Framer Motion, Tailwind</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">90%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="738" height="7" rx="3.5" fill="url(#bar-orange)"/>
+    </g>
+
+    <!-- Skill 3: PHP & Laravel -->
+    <g transform="translate(0, 76)">
+      <text x="0" y="0" class="skill-name">PHP 8.3 &amp; Laravel 11 Systems</text>
+      <text x="225" y="0" class="skill-meta">• Transactional MVC, Eloquent ORM, RESTful APIs</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">90%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="738" height="7" rx="3.5" fill="url(#bar-orange)"/>
+    </g>
+
+    <!-- Skill 4: Database & Schemas -->
+    <g transform="translate(0, 114)">
+      <text x="0" y="0" class="skill-name">Relational Schemas &amp; ACID DBs</text>
+      <text x="235" y="0" class="skill-meta">• MySQL, PostgreSQL, Indexing, Supabase BaaS</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">88%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="721" height="7" rx="3.5" fill="url(#bar-orange)"/>
+    </g>
+
+    <!-- Skill 5: Poster & Khmer Typography -->
+    <g transform="translate(0, 152)">
+      <text x="0" y="0" class="skill-name">Avant-Garde Poster &amp; Khmer Typography</text>
+      <text x="295" y="0" class="skill-meta">• Ligature Studies, Experimental Grids, Print Art</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">95%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="779" height="7" rx="3.5" fill="url(#bar-orange)" filter="url(#subtle-glow)"/>
+    </g>
+
+    <!-- Skill 6: UI/UX & Brand Identity -->
+    <g transform="translate(0, 190)">
+      <text x="0" y="0" class="skill-name">Brand Identity &amp; Digital UI/UX</text>
+      <text x="235" y="0" class="skill-meta">• Figma Layout Systems, Adobe Photoshop, Packaging</text>
+      <text x="820" y="0" text-anchor="end" class="skill-pct">92%</text>
+      <rect x="0" y="10" width="820" height="7" rx="3.5" class="track"/>
+      <rect x="0" y="10" width="754" height="7" rx="3.5" fill="url(#bar-orange)"/>
+    </g>
+  </g>
+</svg>
