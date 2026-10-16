@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #09090b;
+    --card: #fafafa;
+    --card-foreground: #09090b;
+    --border: #e4e4e7;
+    --muted: #71717a;
+    --accent: #ff4800;
+    --accent-glow: rgba(255, 72, 0, 0.15);
+  }
+
+  .dark {
+    --background: #08080a;
+    --foreground: #f4f4f5;
+    --card: #111114;
+    --card-foreground: #f4f4f5;
+    --border: #222226;
+    --muted: #a1a1aa;
+    --accent: #ff5e1a;
+    --accent-glow: rgba(255, 94, 26, 0.15);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 72, 0, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 72, 0, 0.6);
+}
+
+::selection {
+  background: #ff4800;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background: #ff5e1a;
+  color: #08080a;
+}
+
+/* Subtle editorial grid overlay */
+.editorial-grid {
+  background-image: linear-gradient(to right, rgba(255, 72, 0, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 72, 0, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.dark .editorial-grid {
+  background-image: linear-gradient(to right, rgba(255, 94, 26, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 94, 26, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Explicit fallback utilities to guarantee 100% color contrast in all modes */
+.bg-editorial-orange {
+  background-color: #ff4800 !important;
+}
+
+.text-editorial-orange {
+  color: #ff4800 !important;
+}
+
+.border-editorial-orange {
+  border-color: #ff4800 !important;
+}
+
+/* Endless Marquee Hardware Optimization */
+.animate-marquee {
+  will-change: transform;
+}
+
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
