@@ -71,8 +71,8 @@ export function Footer() {
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-zinc-400">
-          <p>© 2026 Sok Chanmony. All rights reserved.</p>
-          <p>Engineered with Next.js 14, TypeScript, Tailwind, & Supabase</p>
+          <p>© 2026 Sok Chanmony (GunerXzz). All rights reserved.</p>
+          <p>Engineered with Next.js 14, TypeScript, Tailwind, &amp; Supabase</p>
         </div>
       </div>
     </footer>
